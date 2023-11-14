@@ -1,0 +1,5 @@
+class MyAction extends Action {
+    public void execute(FSM fsm, MyEvent event) {
+        //This method is invoked whenever the corresponding transition occurs.
+    }
+}
