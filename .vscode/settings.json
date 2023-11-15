@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "Fsm.jar"
+        "Fsm.jar",
+        "Out.jar"
     ]
 }

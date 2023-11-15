@@ -1,9 +1,11 @@
-import Fsm.State;
+package Core;
 
-class MyState extends State {
+import Fsm.Event;
+
+public class MyEvent extends Event {
     String name;
 
-    public MyState(String name) {
+    public MyEvent(String name) {
         super(name);
     }
 

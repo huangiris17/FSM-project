@@ -1,3 +1,5 @@
+package Core;
+
 import Fsm.Action;
 import Fsm.FSM;
 import Fsm.Event;

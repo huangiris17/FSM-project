@@ -1,8 +1,13 @@
+package Core;
+
 import java.util.*;
 import Fsm.Event;
 import Fsm.FSM;
 import Fsm.Transition;
 import Fsm.FsmException;
+import Core.MyAction;
+import Core.MyEvent;
+import Core.MyState;
 
 public class Main {
         static Map<String, MyState> mapState;
