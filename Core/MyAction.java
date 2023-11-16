@@ -4,7 +4,7 @@ import Fsm.Action;
 import Fsm.FSM;
 import Fsm.Event;
 
-class MyAction extends Action {
+public class MyAction extends Action {
     int countR = 0;
     int countS = 0;
 

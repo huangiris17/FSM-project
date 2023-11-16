@@ -1,17 +1,16 @@
-package Core;
-
 import java.util.*;
 import Fsm.Event;
 import Fsm.FSM;
 import Fsm.Transition;
 import Fsm.FsmException;
-import Core.MyAction;
+import Fsm.State;
 import Core.MyEvent;
 import Core.MyState;
+import Core.MyAction;
 
 public class Main {
-        static Map<String, MyState> mapState;
-        static Map<String, MyEvent> mapEvent;
+        static Map<String, State> mapState;
+        static Map<String, Event> mapEvent;
 
         public static void main(String[] args) {
                 mapState = new HashMap<>();
@@ -36,7 +35,7 @@ public class Main {
                 }
         }
 
-        private static void buildState(Map<String, MyState> mapState) {
+        private static void buildState(Map<String, State> mapState) {
                 mapState.put("CLOSED", new MyState("CLOSED"));
                 mapState.put("LISTEN", new MyState("LISTEN"));
                 mapState.put("SYN_SENT", new MyState("SYN_SENT"));
@@ -50,7 +49,7 @@ public class Main {
                 mapState.put("TIME_WAIT", new MyState("TIME_WAIT"));
         }
 
-        private static void buildEvent(Map<String, MyEvent> mapEvent) {
+        private static void buildEvent(Map<String, Event> mapEvent) {
                 mapEvent.put("PASSIVE", new MyEvent("PASSIVE"));
                 mapEvent.put("ACTIVE", new MyEvent("ACTIVE"));
                 mapEvent.put("SYN", new MyEvent("SYN"));

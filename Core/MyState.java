@@ -2,7 +2,7 @@ package Core;
 
 import Fsm.State;
 
-class MyState extends State {
+public class MyState extends State {
     String name;
 
     public MyState(String name) {
